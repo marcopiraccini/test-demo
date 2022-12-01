@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "platformatic": "^0.8.0"
   }
 }
