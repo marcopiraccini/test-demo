@@ -1,6 +1,7 @@
 name: Deploy Platformatic DB application to the cloud
 
 on:
+  workflow_dispatch:
   pull_request:
     paths-ignore:
       - 'docs/**'
