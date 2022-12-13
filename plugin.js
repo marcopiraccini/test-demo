@@ -1,5 +1,9 @@
-/// <reference path="./global.d.ts" />
 'use strict'
 
-/** @param {import('fastify').FastifyInstance} app */
-module.exports = async function (app) {}
+module.exports = async function plugin (app) {
+  app.log.info('plugin loaded')
+
+  app.get('/hello', async function (request, response) {
+    return { hello: 'from PR 5 -v5' }
+  })
+}
